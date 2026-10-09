@@ -79,3 +79,109 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+/* 6. TARJETAS (flex) */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarjeta {
+  flex: 1 1 250px;
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 { margin-top: 0; }
+
+.tarjeta a {
+  color: var(--color-primario-oscuro);
+  font-weight: bold;
+}
+
+.tarjeta a:hover { color: var(--color-primario); text-decoration: underline; }
+
+/* 7. TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-tarjeta);
+}
+
+th, td {
+  border: 1px solid var(--color-borde);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th { background-color: var(--color-primario); color: #fff; }
+
+/* 8. PERFIL */
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.perfil img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-primario);
+}
+
+/* 9. TARJETA DE META */
+.meta {
+  border-left: 6px solid var(--color-primario);
+}
+
+/* 10. CLASE UTILITARIA para centrar texto */
+.centrado { text-align: center; }
+/* 11. FORMULARIO */
+form {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 1.2rem;
+  max-width: 500px;
+}
+
+form label { display: block; margin-top: 0.8rem; font-weight: bold; }
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.boton {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: var(--radio);
+  background-color: var(--color-primario);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+*/ Hover en botones */
+.boton:hover { background-color: var(--color-primario-oscuro); }
+
+/* 12. RESPONSIVO: en pantallas <= 600px las tarjetas pasan a una columna */
+@media (max-width: 600px) {
+  .tarjetas { flex-direction: column; }
+  .perfil { flex-direction: column; text-align: center; }
+}
+/* 13. SEPARACIÓN ENTRE PERFILES */
+.perfil + .perfil {
+  margin-top: 2rem;
+}
