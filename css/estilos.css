@@ -182,6 +182,6 @@ form textarea {
   .perfil { flex-direction: column; text-align: center; }
 }
 /* 13. SEPARACIÓN ENTRE PERFILES */
-.perfil + .perfil {
+.perfiles + .perfiles {
   margin-top: 2rem;
 }
