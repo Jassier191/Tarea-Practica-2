@@ -1,0 +1,81 @@
+/* MI HUB ESTUDIANTIL 2026 — Hoja de estilos externa */
+
+/* 1. VARIABLES (colores y tamaños base) */
+:root {
+  --color-primario: #e8631c;
+  --color-primario-oscuro: #b8500f;
+  --color-fondo: #fdf3ea;
+  --color-tarjeta: #ffffff;
+  --color-texto: #2b2118;
+  --color-borde: #f0c9aa;
+  --tamano-base: 1rem;
+  --radio: 10px;
+  --ancho-max: 900px;
+}
+
+/* 2. BASE Y TIPOGRAFÍA (fuente del sistema) */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: var(--tamano-base);
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+/* 3. HEADER Y NAVEGACIÓN */
+header {
+  background-color: var(--color-primario-oscuro);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 { margin: 0 0 0.8rem; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radio);
+  transition: background-color 0.2s;
+}
+
+/* Hover en enlaces */
+nav a:hover,
+nav a:focus { background-color: var(--color-primario); }
+
+/* 4. CONTENIDO */
+main {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+section { margin-bottom: 2rem; }
+
+h2 {
+  color: var(--color-primario-oscuro);
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 0.3rem;
+}
+
+/* 5. FOOTER */
+footer {
+  background-color: var(--color-primario-oscuro);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
