@@ -79,3 +79,42 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+/* 6. TARJETAS (flex) /
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarjeta {
+  flex: 1 1 250px;
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 { margin-top: 0; }
+
+.tarjeta a {
+  color: var(--color-primario-oscuro);
+  font-weight: bold;
+}
+
+.tarjeta a:hover { color: var(--color-primario); text-decoration: underline; }
+
+/ 7. TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-tarjeta);
+}
+
+th, td {
+  border: 1px solid var(--color-borde);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th { background-color: var(--color-primario); color: #fff; }
