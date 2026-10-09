@@ -120,13 +120,13 @@ th, td {
 th { background-color: var(--color-primario); color: #fff; }
 
 /* 8. PERFIL */
-.perfil {
+.perfiles {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.perfil img {
+.perfiles img {
   width: 160px;
   height: 160px;
   object-fit: cover;
